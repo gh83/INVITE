@@ -1,0 +1,32 @@
+@mixin bg-img ($img, $pos: top center, $att: scroll)
+  background-image: url($img)
+  background-position: $pos
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: $att
+  background-color: gray
+
+@mixin transition ($prop: all, $time: 0.3s, $ease: ease-in-out)
+  transition: $prop $time $ease
+
+@mixin big-letter($col1, $col2)
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 200px 0
+  h1
+    margin: 0
+    font-size: 247px
+    font-family: Roboto-Bold
+    text-transform: uppercase
+    position: absolute
+    color: $col1
+    z-index: 1
+  h2
+    font-family: MyriadPro-Regular
+    text-transform: uppercase
+    font-size: 38px
+    color: $col2
+    z-index: 10

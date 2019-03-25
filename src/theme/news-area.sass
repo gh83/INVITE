@@ -1,0 +1,59 @@
+.news-area
+  .row
+    margin: 0
+    &.left-top
+      background-color: #222222
+      color: #fff
+    &.right-bottom
+      background-color: #f3f3f3
+      color: #222222
+  [class^='col-']
+    padding: 0
+    &.left-top
+      padding-left: 150px
+    &.right-bottom
+      padding-right: 150px
+    @media screen and (min-device-width: 1200px)
+      &.left-top
+        padding-left: 50px
+      &.right-bottom
+        padding-right: 50px
+    @media screen and (min-device-width: 1400px)
+      &.left-top
+        padding-left: 150px
+      &.right-bottom
+        padding-right: 150px
+  .news-area__image-block
+    height: 100%
+    img
+      display: block
+      width: 100%
+  .news-area__text-block
+    padding-top: 80px
+    width: 100%
+    padding-bottom: 50px
+    @media screen and (min-device-width: 1200px)
+      padding-top: 20px
+      padding-bottom: 0
+    @media screen and (min-device-width: 1400px)
+      padding-top: 80px
+      padding-bottom: 0
+    &.left-top
+      padding-right: 80px
+    &.right-bottom
+      padding-left: 80px
+    h6
+      font-size: 13px
+      font-family: 'GothamBook'
+    h3
+      font-size: 25px
+      font-family: MyriadPro-Regular
+      font-weight: bold
+      text-transform: uppercase
+    p
+      font-family: 'GothamBook'
+      font-size: 15px
+      padding-top: 45px
+
+
+

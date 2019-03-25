@@ -1,0 +1,36 @@
+.blog-area
+  text-align: center
+  .title_big-letter
+    @include big-letter(#d7d7d7, #222222)
+  h3
+    font-family: GothamBook
+    font-size: 30px
+  .blog-area__item-content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    padding: 85px 0
+    .blog-area__item-content_title-image
+      width: 270px
+      height: 280px
+      @media screen and (min-device-width: 1200px)
+        width: 220px
+        height: 230px
+      @media screen and (min-device-width: 1400px)
+        width: 270px
+        height: 280px
+      img
+        display: block
+        width: 100%
+    h4
+      padding-top: 45px
+      padding-bottom: 30px
+      color: $accent
+      font-family: MyriadPro-Regular
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: bold
+    p
+      font-family: GothamBook
+      font-size: 15px

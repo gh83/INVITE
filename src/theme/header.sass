@@ -1,0 +1,116 @@
+.site-header
+  @include bg-img("../assets/images/header.jpg")
+  .content-container
+    @media screen and (max-device-width: 1350px)
+      padding: 0 50px
+    @media screen and (max-device-width: 1000px)
+      padding: 0 15px
+  .header-bar_fixed
+    padding: 0 150px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    background-color: rgba(34, 34, 34, 0.5)
+    animation-name: show-header
+    animation-duration: 1s
+    z-index: 1000
+    //@media screen and (min-device-width: 1200px)
+    //  margin-right: 80px
+    @media screen and (max-device-width: 1350px)
+      padding: 0 50px
+    @media screen and (max-device-width: 1000px)
+      padding: 0 15px
+  @keyframes show-header
+    0%
+      opacity: 0
+      top: -70px
+    100%
+      opacity: 1
+      top: 0
+
+
+  .header-bar__logo
+    width: 65px
+    height: 65px
+    background-color: #ffffff
+    position: relative
+    margin-top: 35px
+    @media screen and (max-device-width: 1200px)
+      display: none
+    >div
+      width: 65px
+      height: 65px
+      background-color: $accent
+      color: #ffffff
+      position: absolute
+      z-index: 100
+      top: -8px
+      left: -8px
+      span
+        font-family: OpenSans-Bold
+        font-size: 30px
+        position: absolute
+        top: 20px
+        left: 14px
+
+  .header-bar__menu
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-top: 50px
+    text-align: center
+    li
+      list-style: none
+      a
+        @include transition()
+        color: #ffffff
+        font-family: MyriadPro-Regular
+        font-size: 20px
+        text-decoration: none
+        padding: 0 15px 48px 15px
+        &.active
+          border-bottom: 6px solid $accent
+        &:hover
+          color: $accent
+
+  .header-bar__social-icons
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 50px 0 40px 0
+    li
+      list-style: none
+      a
+        @include transition()
+        color: #ffffff
+        font-weight: bold
+        font-size: 20px
+        text-decoration: none
+        &:hover
+          color: $accent
+
+  hr
+    margin-top: 0
+    border-top: 1px solid #757575
+
+  .header__start-screen-title
+    padding: 266px 0
+    text-align: center
+    margin: 0
+    span:first-child
+      font-family: GothamBold
+      color: #fff
+      font-size: 138px
+      text-transform: uppercase
+    span:last-child
+      color: $accent
+      font-family: MyriadPro-Regular
+      font-size: 25px
+      text-transform: uppercase
+      letter-spacing: 21px
+
+
+
+
+

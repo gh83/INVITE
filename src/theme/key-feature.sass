@@ -1,0 +1,48 @@
+.key-feature
+  @include bg-img('../assets/images/key-feature.jpg')
+  color: #ffffff
+  .key-feature__content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    padding: 190px 0
+    h3
+      font-family: MyriadPro-Regular
+      text-transform: uppercase
+      font-size: 25px
+      margin-left: 15px
+    p
+      font-family: GothamBook
+      font-size: 15px
+      margin-left: 15px
+      padding: 50px 0 70px 0
+    .key-feature__inscription
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      background-color: $accent
+      font-family: MyriadPro-Regular
+      text-transform: uppercase
+      font-size: 15px
+      margin-left: 15px
+      margin-bottom: 25px
+      &.first-inscription
+        width: 370px
+        height: 38px
+        margin-left: 0
+        padding-left: 34px
+      &.second-inscription
+        width: 400px
+        height: 38px
+        padding-left: 19px
+      &.third-inscription
+        width: 430px
+        height: 38px
+        padding-left: 19px
+  img
+    display: block
+    max-height: 900px
+    margin: 0 auto
+    padding: 100px 0

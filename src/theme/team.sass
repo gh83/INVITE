@@ -1,0 +1,49 @@
+.team
+  background-color: #ffffff
+  color: #222222
+  .title_big-letter
+    @include big-letter(#d7d7d7, #222222)
+    padding: 140px 0
+  text-align: center
+  h3
+    font-family: GothamBook
+    font-size: 30px
+  .row
+    padding-bottom: 60px
+    .team-block__member-image
+      padding: 20px 5px
+      margin: 20px auto
+      width: 280px
+      height: 415px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      &.first-member
+        @include bg-img('../assets/images/member1.jpg')
+      &.second-member
+        @include bg-img('../assets/images/member2.jpg')
+      &.third-member
+        @include bg-img('../assets/images/member3.jpg')
+      &.fourth-member
+        @include bg-img('../assets/images/member4.jpg')
+      @media screen and (min-device-width: 1200px)
+        width: 230px
+        height: 355px
+      @media screen and (min-device-width: 1400px)
+        width: 280px
+        height: 415px
+      > div
+        margin: -21px auto
+        bottom: 19px
+        background-color: #ffffff
+        padding: 0 20px
+        font-family: MyriadPro-Regular
+        width: 180px
+        height: 50px
+        h3
+          color: $accent
+          text-transform: uppercase
+          font-size: 18px
+          font-weight: bold
+        h4
+          font-size: 15px
